@@ -90,7 +90,7 @@ nav {
 .hero-section {
     background-color: var(--black-color);
     height: 60vh;
-    background-image: url('imgs/prod1.jpeg');
+    background-image: url('imgs/heroProd2.jpeg');
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
@@ -99,6 +99,10 @@ nav {
     align-items: center;
     justify-content: center;
     
+}
+
+.hero-section h2 {
+    color: var(--white-color);
 }
 
 .hero-section span {
