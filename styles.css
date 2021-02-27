@@ -8,6 +8,7 @@ body {
     font-family: 'Poppins', sans-serif;
     position: relative;
     margin: var(--header-height) 0 0 0;
+    background-color: var(--first-color);
     padding: 0.1rem;
     transition: .5s;
 }
@@ -37,8 +38,8 @@ nav {
     justify-content: space-around;
     align-items: center;
     min-height: 8vh;
-    width: 100%;
-    background-color: var(--first-color);
+   
+    background-color: var(--white-color);
 
 }
 
@@ -52,7 +53,7 @@ nav {
     height: 92vh;
     top: 8vh;
     width: 35%;
-    background-color: var(--first-color);
+    background-color: var(--white-color);
     align-items: center;
     justify-content: space-around;
     transform: translateX(-100%);
@@ -78,14 +79,37 @@ nav {
     width: 25px;
     height: 5px;
     margin: 5px;
-    background-color: var(--white-color);
+    background-color: var(--black-color);
 }
 
 .burger:hover {
     cursor: pointer;
 }
 
-/* == HEADER == */
+/* == HERO SECTION == */
+.hero-section {
+    background-color: var(--black-color);
+    height: 60vh;
+    background-image: url('imgs/prod1.jpeg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.hero-section span {
+    font-size: 15px;
+    text-align: center;
+    color: var(--white-color);    
+    font-weight: bold;    
+    
+}
+
+/* == HEADER == 
 .header {
     width: 100%;
     height: var(--header-height);
@@ -118,7 +142,7 @@ nav {
     overflow: hidden;
 }
 
-/* == NAVBAR LATERAL == */
+/* == NAVBAR LATERAL == 
 .l-navbar {
     position: fixed;
     top: 0;
