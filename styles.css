@@ -262,11 +262,21 @@ h4 {
 }
 
 @media(max-width: 500px) {
+   
+    .nav__links a {
+        text-align: center;
+        width: 30%;
+        margin-right: auto;
+    }
     .nav__links li {
+        left: 0;
+        padding-right: 30px;
         font-size: 15px;
         margin: auto;
         text-align: center;
     }
+
+    
 }
 
 .nav-active {
