@@ -6,9 +6,8 @@
 
 body {
     font-family: 'Poppins', sans-serif;
-    position: relative;
-    margin: var(--header-height) 0 0 0;
-    background-color: var(--first-color);
+    margin: 0;
+   
     padding: 0.1rem;
     transition: .5s;
 }
@@ -28,13 +27,12 @@ body {
 }
 
 /* == BASE == */
-*, ::before, ::after {
-    box-sizing: border-box;
-}
+
 
 /* == NAV == */
 nav {
     display: flex;
+    top: 0;
     justify-content: space-around;
     align-items: center;
     min-height: 8vh;
@@ -89,7 +87,7 @@ nav {
 /* == HERO SECTION == */
 .hero-section {
     background-color: var(--black-color);
-    height: 60vh;
+    height: 40vh;
     background-image: url('imgs/heroProd2.jpeg');
     background-size: cover;
     background-position: center center;
@@ -112,6 +110,105 @@ nav {
     font-weight: bold;    
     
 }
+/* == PRODUCT SECTION == */
+
+.front__product {
+    height: 50vh;
+    display: flex;
+    justify-content: space-around;    
+    background-color: var(--white-color);
+    flex-grow: 1 2 1;
+    margin-top: 20px;
+}
+
+.front__product .arrow-left {
+    
+    margin: auto;
+    
+}
+
+.front__product .arrow-right {
+    
+    margin: auto;
+}
+
+.front__product .product__box {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 2 1;
+    width: 30%;
+}
+
+.front__product .product__image {
+   
+    background-size: cover;
+    display: flex;
+    background-image: url('imgs/prod1.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    align-content: center center;
+    
+    margin-top: 10px;    
+    height: 70%;
+    width: 100%
+    
+}
+
+.front__product .product__image span {
+    
+    max-height: 20%;
+    background-color:var(--first-color);
+    font-size: .7rem;
+    padding: 5px;
+}
+
+.front__product .product__info  {
+    text-align: center;
+}
+
+.front__product .arrows {
+    display: flex;
+    justify-content: space-around;
+}
+
+/* == ABOUT SECTION == */
+.about__section {
+    height: 70vh;
+    background-color: #88C5F2;
+    display: flex;
+    flex-direction: column;
+    color: var(--white-color);    
+    
+}
+
+.about__header {
+    text-align: center;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+}
+
+.about__info {
+    text-align: center;
+}
+
+/* == CONTACT US == */
+.contact__us {
+    background-color: var(--first-color);
+    display: flex;
+    flex-direction: column;
+}
+
+.contact__header {
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.contact__form input {
+    width: 100%;
+    height: 30px;
+    
+}
+
 
 /* == HEADER == 
 .header {

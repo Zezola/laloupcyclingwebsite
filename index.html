@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+  <!--  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous"> --> 
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;0,700;1,100;1,200&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -55,51 +55,85 @@
     </div>
 
     <!-- Products section -->
-        <div class="container">
-            <!--Slider-->
-            <div class="slider__box">
-                
+    <div class="front__product">
+        <div class="arrow-left">
+            <i onClick = "backgroundImageSlider()" id = "left-arrow" class="fa fa-arrow-left" aria-hidden="true"></i>
+        </div>        
+        
+        <div class="product__box">
+            <div class="product__image">
+                <span>Mais vendido</span>
             </div>
-        </div>
+            <div class="product__info">
+                <p>Chopped</p>
+                <p>R$39.90</p>
+            </div>
+        </div>       
+
+       <div class="arrow-right">
+        <i id = "right-arrow" class="fa fa-arrow-right" aria-hidden="true"></i>
+       </div>
+       
+    </div>
 
 
     <!-- About us section -->
 
-
+    <div class="about__section">
+        <div class="about__header">
+            <h2>Sobre nós</h2>
+        </div>
+        <div class="about__info">
+            <p>
+                Somos uma marca de moda sustentável e que preza o consumo consciente.
+                Nossas peças são produzidas uma a uma, através da reciclagem de peças
+                garimpadas. Cada uma é única e especial. Dá produção ao pós consumo, a 
+                LaLou visa sempre causar o minimo de impacto negativo ao meio ambiente 
+                e o máximo impacto positivo na vida de quem produz e compra.
+            </p>
+        </div>
+    </div>
 
 
     <!-- Contact us section -->
-
-    <!-- 
-    <div class="container">
-        <div class="navbar">
-            <div class="logo">
-               <!--  <img src="images/logo.png" alt="Logo" width="125px"> 
-               <h2>Lalou</h2>
-            </div>
-            <nav>
-                <ul>
-                    <li><a href="">Quem somos</a></li>
-                    <li><a href="">Produtos</a></li>
-                    <li><a href="">Contato</a></li>
-                </ul>
-            </nav>
+    <div class="contact__us">
+        <div class="contact__header">
+            <h2>Entre em contato</h2>
         </div>
-        <div class="row">
-            <div class="col-2">
-                <h1>A roupa mais sustentável é aquela<br>que já existe</h1>
-                <p>Somos uma marca de moda sustentável e que preza o consumo
-                    consciente. Nossas peças são produzidas uma a uma, através
-                    da reciclagem de peças garimpadas. Cada uma é única e especial.
-                    Da produção ao pós consumo, a Lalou visa sempre causar o mínimo 
-                    de impacto negativo ao meio ambiente e o máximo impacto positivo 
-                    na vida de quem produz e compra
-                </p>
-                <a href="" class="btn">Nossas peças</a>
-            </div>
-            
+        <div class="contact__form">
+            <form>
+                <div class="form__control">
+                    <input type="text" placeholder="Nome">
+                </div>
+                <div class="form__control">
+                    <input type="email" placeholder="Email">
+                </div>
+                <div class="form__control">
+                    <input type="text" placeholder="Telefone">
+                </div>
+                <div class="form__control">
+                    <input type="text" placeholder="Endereço">
+                </div>
+                <div class="form__control">
+                    <input type="text" placeholder="Assunto">
+                </div>
+                <div class="form__control">
+                    <input type="textarea" placeholder="Deixe sua mensagem aqui...">
+                </div>
+                <div class="form__control">
+                    <button>Enviar</button>                   
+                    
+                </div>
+            </form>
         </div>
-    </div> -->
+    </div>
+    
+    <!-- Footer section -->
+    <footer>
+        <p>laloupcycling@gmail.com</p>
+        <i class="fa fa-instagram" aria-hidden="true"></i>
+        <i class="fa fa-link" aria-hidden="true"></i>
+    </footer>
 
 
     
