@@ -19,7 +19,7 @@ const nextBackground = () => {
 window.onscroll = () => {
     console.log(window.pageYOffset);
     var nav = document.getElementById('header');
-    if ( window.pageYOffset > 100 ) {
+    if ( window.pageYOffset > 500 ) {
         nav.classList.add("headerMoved");
     } else {
         nav.classList.remove("headerMoved");
