@@ -1,20 +1,27 @@
-/* Making the navbar slide to the side */
-const navSlide = () => {
-    const burger = document.querySelector(".burger");
-    const nav = document.querySelector('.nav__links');
-
-    burger.addEventListener('click', () => {
-        nav.classList.toggle('nav-active');
-    })
+const openSlideMenu = () => {
+    document.getElementById('slide__menu').style.width = '250px';
+    document.getElementById('content').style.marginLeft = '250px';
+    return false;
 }
-var c = 0;
 
-const backgroundImageSlider = () => {
-    const arrow_left = document.querySelector("#left-arrow");
-    const arrow_right = document.querySelector("#right-arrow");
-    const currentBackgroundImg = document.querySelector("")    
+const closeSlideMenu = () => {
     
+    document.getElementById('slide__menu').style.width = '0';
+    document.getElementById('content').style.marginLeft = '0';
+    return false;
 }
 
-/* Calling the functions */
-navSlide();
+const nextBackground = () => {
+    let imgName = 'bannerBackground';
+    let backgroundImg = document.getElementById('hero').style.backgroundImage = "url('imgs/bannerBackground2.jpeg')";
+}
+
+window.onscroll = () => {
+    console.log(window.pageYOffset);
+    var nav = document.getElementById('header');
+    if ( window.pageYOffset > 100 ) {
+        nav.classList.add("headerMoved");
+    } else {
+        nav.classList.remove("headerMoved");
+    }
+}
