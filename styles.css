@@ -20,6 +20,7 @@ body {
     --nav-width: 68px; */
     /* Colors */
     --first-color: #DBF0FA;
+    --second-color: #84C7F9;
     --white-color: #F9FAFB;
     --black-color: #4A4A4B;
     --top-color: #B2DAF8;
@@ -321,6 +322,18 @@ nav {
     flex-direction: column;
 }
 
+.featured__bag {
+    
+    margin-bottom: 20px;
+    margin-top: .7rem;
+}
+
+.featured__bag i {
+    background-color: var(--first-color);
+    width: 2rem;
+    height: 2rem;
+}
+
 .featured__product .product__image__slider img {
     max-width: 100%;
 }
@@ -330,10 +343,11 @@ nav {
     padding-bottom: 30%;
 }
 
-.featured__product__info .fa-shopping-bag {
-    transform: translateY(-300%);
-    background-color: var(--first-color);
+.featured__bag {
+    transform: translateY(-120%);
 }
+
+
 
 /* == WELCOME SECTION == */
 
@@ -357,7 +371,32 @@ nav {
     font-size: 20px;
 }
 
+/* == INSTAGRAM SECTION == */
+.insta__section {
+    display: flex;
+    height: 8rem;
+    background-color: var(--second-color);
+}
+.insta__logo img {
+    width: 30%;
+    margin-left: 6rem;
+    margin-top: 2rem;
+    color: var(--first-color);
+}
 
+.insta__logo {
+    
+    flex: 1;    
+    
+}
+
+
+.insta__info {
+    
+    align-items: center;
+    margin-top: 1.2rem;
+    flex: 1;
+}
 /* == ABOUT SECTION == */
 .about__section {
     height: 70vh;
