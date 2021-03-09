@@ -99,7 +99,6 @@ nav {
 */
 .page__top {
     text-align: center;  
-    padding-top: 1rem; 
     height: 5vh;
     background-color: var(--top-color);
     font-size: .8rem;
@@ -320,31 +319,39 @@ nav {
     
     display: flex;
     flex-direction: column;
+    text-align: center;
 }
 
 .featured__bag {
     
-    margin-bottom: 20px;
+    margin-bottom: 2rem;
     margin-top: .7rem;
 }
 
-.featured__bag i {
+.featured__bag img {
     background-color: var(--first-color);
-    width: 2rem;
-    height: 2rem;
+    width: 1.4rem;
+    height: 1.4rem;
+}
+.featured__product .product__image__slider {
+   margin-top: 20%;
+    
+      
 }
 
 .featured__product .product__image__slider img {
-    max-width: 100%;
+    width: 70%;
+    
 }
 
 .featured__product__info {
     text-align: center;
-    padding-bottom: 30%;
+    margin-bottom: 20%;
+    
 }
 
 .featured__bag {
-    transform: translateY(-120%);
+    transform: translateY(-140%);
 }
 
 
@@ -379,7 +386,7 @@ nav {
 }
 .insta__logo img {
     width: 30%;
-    margin-left: 6rem;
+    margin-left: 4.4rem;
     margin-top: 2rem;
     color: var(--first-color);
 }
@@ -395,6 +402,7 @@ nav {
     
     align-items: center;
     margin-top: 1.2rem;
+    margin-right: 4.4rem;
     flex: 1;
 }
 /* == ABOUT SECTION == */
@@ -418,9 +426,18 @@ nav {
     padding: 5px;
 }
 
+/* == QUEM SOMOS == */
+.about {
+    margin-top: 20%;
+    text-align: center;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 20%;
+}
+
 /* == CONTACT US == */
 .contact__us {
-    margin-top: 20px;
+    margin-top: 5rem;
     background-color: var(--first-color);
     display: flex;
     flex-direction: column;
@@ -485,6 +502,9 @@ footer {
     align-items: center;
 }
 
+footer a {
+    color: inherit;
+}
 
 /* == HEADER == 
 .header {
